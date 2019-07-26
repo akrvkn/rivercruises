@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+{% include head.html %}
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    {% include yandex-metrika.html %}
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--  TEMPLATE PRELOADER AREA -->
+    <div id="preloader-wrapper">
+        <div class="preloader-wave-effect"></div>
+    </div>
+    <!-- TEMPLATE PRELOADER AREA END -->
+    <div class="wrapper">
+        <div class="content-wrapper fixed-footer-content">
+            {% include header/header.html %}
+            {% include slider/slider.html %}
+            <!-- START MAIN CONTENT AREA -->
+            <div class="content">
+                {% include content/datatable.html %}
+                {% include content/promo-box.html %}
+                {% include content/karta.html %}
+                {% include content/progress-bars.html %}
+                {% include content/gallery.html %}
+                {% include content/counters.html %}
+                {% include content/prices-4.html %}
+                {% include content/testimonial.html %}
+                {% include content/call-to-action.html %}
+                {% include content/news.html %}
+                {% include content/subscribe-form.html %}
+                {% include content/partners.html %}
+                {% include content/contact-form.html %}
+                {% include content/google-map.html %}
+            </div>
+        </div>
+        {% include footer/footer.html %}
+    </div>
+    {% include footer/footer-scripts-home.html %}
+</body>
+</html>

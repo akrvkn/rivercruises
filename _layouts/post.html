@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+{% include head.html %}
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{% include yandex-metrika.html %}
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!--  TEMPLATE PRELOADER AREA -->
+<div id="preloader-wrapper">
+    <div class="preloader-wave-effect"></div>
+</div>
+<!-- TEMPLATE PRELOADER AREA END -->
+<div class="wrapper">
+    <div class="content-wrapper fixed-footer-content">
+        {% include header/header.html %}
+        {% include header/intelligent-header-space.html %}
+        <!-- START MAIN CONTENT AREA -->
+        <div class="content">
+            {% include header/breadcrumb-area.html %}
+            <!-- Template standard row Start for Blog -->
+            <div class="adam-standard-row gray-bg ptb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="single-post single-blog-post-area">
+                                <div class="post-content">
+                                    <h2 class="blog-post-title"></h2>
+                                    <div class="post-meta">
+                                        <span class="post-time"><i class="icon-clock"></i></span>
+                                    </div>
+
+                                </div>
+                            </article>
+
+                            <!-- comment form Start -->
+                            <div class="comment-form-wrapper">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="comment-form ">
+                                            <h4  class="comment-title">Обратная связь</h4>
+                                            <form id="adam-contact-form" action="https://script.google.com/macros/s/AKfycbw3h9PA2tKsq5An38asfQSfHUyQEeEFiHe5FMGtTi6JV10lrhE/exec" method="post" name="adam_message_form" class="contcat-form  text-center">
+                                                <div class="form-head fix">
+                                                    <div class="marg-area">
+                                                        <input type="text" name="name" placeholder="Имя">
+                                                    </div>
+                                                    <div class="marg-area">
+                                                        <input type="email" name="email" placeholder="Ваш Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-body">
+                                                    <input type="text" name="subject" placeholder="Тема">
+                                                    <textarea name="message" class="text-area" cols="30" rows="10" placeholder="Пожелания"></textarea>
+                                                </div>
+                                                <input type="submit" class="btn-submitt btn-medium" value="Отправить">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment form End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Template standard row End for Blog -->
+        </div>
+    </div>
+    {% include footer/footer.html %}
+</div>
+{% include footer/footer-scripts-post.html %}
+</body>
+</html>

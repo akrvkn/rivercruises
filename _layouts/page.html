@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+{% include head.html %}
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{% include yandex-metrika.html %}
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!--  TEMPLATE PRELOADER AREA -->
+<div id="preloader-wrapper">
+    <div class="preloader-wave-effect"></div>
+</div>
+<!-- TEMPLATE PRELOADER AREA END -->
+<div class="wrapper">
+    <div class="content-wrapper fixed-footer-content">
+        {% include header/header.html %}
+        {% include header/intelligent-header-space.html %}
+        <!-- START MAIN CONTENT AREA -->
+        <div class="content">
+            {% include header/breadcrumb-area.html %}
+            {{ content }}
+        </div>
+    </div>
+    {% include footer/footer.html %}
+</div>
+{% include footer/footer-scripts-page.html %}
+</body>
+</html>
